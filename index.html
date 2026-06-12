@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portal resmi MIN 3 Kota Madiun — Akses Web Madrasah, E-Learning, dan Rapor Digital dalam satu tempat.">
+  <meta name="keywords" content="MIN 3 Madiun, Madrasah Ibtidaiyah Negeri 3, Portal Sekolah, E-Learning, Rapor Digital, Kementerian Agama">
+  <meta name="author" content="MIN 3 Kota Madiun">
+  <meta name="theme-color" content="#006b47">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Portal MIN 3 Kota Madiun">
+  <meta property="og:description" content="Akses layanan digital MIN 3 Kota Madiun — Web Madrasah, E-Learning, dan Rapor Digital.">
+  <meta property="og:type" content="website">
+
+  <title>Portal — MIN 3 Kota Madiun</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="chatgpt_image_12_jun_2026_10.21.22.png/screen.png">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <main class="portal" id="portal">
+    <!-- Background -->
+    <div class="portal__bg" aria-hidden="true">
+      <div class="portal__bg-image" id="parallax-bg"></div>
+      <div class="portal__bg-overlay"></div>
+      <div class="portal__bg-pattern"></div>
+    </div>
+
+    <!-- Particles -->
+    <canvas id="particles-canvas" aria-hidden="true"></canvas>
+
+    <!-- Content -->
+    <div class="portal__content">
+
+      <!-- Header / Branding -->
+      <header class="portal__header">
+        <div class="portal__logo-wrapper">
+          <div class="portal__logo-glow"></div>
+          <img
+            src="chatgpt_image_12_jun_2026_10.21.22.png/screen.png"
+            alt="Logo MIN 3 Madiun"
+            class="portal__logo"
+            width="110"
+            height="110"
+          >
+        </div>
+
+        <h1 class="portal__title">MIN 3 MADIUN</h1>
+        <p class="portal__subtitle">Madrasah Ibtidaiyah Negeri 3 Kota Madiun</p>
+        <p class="portal__tagline">Mewujudkan generasi berilmu, beriman, dan berakhlak mulia melalui pendidikan berkualitas</p>
+
+        <!-- Clock -->
+        <div class="portal__clock" id="portal-clock" aria-live="polite" aria-label="Jam digital">
+          <span class="portal__clock-icon">🕐</span>
+          <span id="clock-date">--</span>
+          <span class="portal__clock-separator"></span>
+          <span id="clock-time">--:--:--</span>
+          <span>WIB</span>
+        </div>
+      </header>
+
+      <!-- Portal Cards -->
+      <nav class="portal__cards" aria-label="Layanan Portal">
+
+        <!-- Card 1: Web Madrasah -->
+        <a href="https://web.min3madiun.sch.id/" class="portal-card" id="card-web-madrasah" target="_blank" rel="noopener noreferrer">
+          <div class="portal-card__icon portal-card__icon--madrasah">
+            <svg class="portal-card__svg" viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M2 12h20"/>
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+            </svg>
+          </div>
+          <div class="portal-card__content">
+            <h2 class="portal-card__title">Web Madrasah</h2>
+            <p class="portal-card__desc">Informasi profil, berita & pengumuman madrasah</p>
+          </div>
+          <div class="portal-card__arrow">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M5 12h14"/>
+              <path d="M12 5l7 7-7 7"/>
+            </svg>
+          </div>
+        </a>
+
+        <!-- Card 2: Web E-Learning -->
+        <a href="https://elearning.min3madiun.sch.id/" class="portal-card" id="card-elearning" target="_blank" rel="noopener noreferrer">
+          <div class="portal-card__icon portal-card__icon--elearning">
+            <svg class="portal-card__svg" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
+              <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+            </svg>
+          </div>
+          <div class="portal-card__content">
+            <h2 class="portal-card__title">Web E-Learning</h2>
+            <p class="portal-card__desc">Platform pembelajaran daring untuk siswa & guru</p>
+          </div>
+          <div class="portal-card__arrow">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M5 12h14"/>
+              <path d="M12 5l7 7-7 7"/>
+            </svg>
+          </div>
+        </a>
+
+        <!-- Card 3: Rapor Digital -->
+        <a href="https://rdm.min3madiun.sch.id/" class="portal-card" id="card-rapor-digital" target="_blank" rel="noopener noreferrer">
+          <div class="portal-card__icon portal-card__icon--rapor">
+            <svg class="portal-card__svg" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+              <polyline points="14 2 14 8 20 8"/>
+              <line x1="9" y1="13" x2="15" y2="13"/>
+              <line x1="9" y1="17" x2="13" y2="17"/>
+            </svg>
+          </div>
+          <div class="portal-card__content">
+            <h2 class="portal-card__title">Rapor Digital</h2>
+            <p class="portal-card__desc">Sistem penilaian & rapor online madrasah</p>
+          </div>
+          <div class="portal-card__arrow">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M5 12h14"/>
+              <path d="M12 5l7 7-7 7"/>
+            </svg>
+          </div>
+        </a>
+
+      </nav>
+
+      <!-- Info Bar -->
+      <div class="portal__info animate-on-scroll animate-delay-4">
+        <span class="portal__info-item">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+            <circle cx="12" cy="10" r="3"/>
+          </svg>
+          Jl. Sunan Bonang, Ds. Rejosari, kec. kebonsari, kab. madiun
+        </span>
+        <span class="portal__info-divider" aria-hidden="true"></span>
+        <span class="portal__info-item">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+          </svg>
+          (0351) 123456
+        </span>
+        <span class="portal__info-divider" aria-hidden="true"></span>
+        <span class="portal__info-item">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+            <polyline points="22,6 12,13 2,6"/>
+          </svg>
+          info@min3madiun.sch.id
+        </span>
+      </div>
+
+      <!-- Footer -->
+      <footer class="portal__footer">
+        <p class="portal__footer-text">
+          &copy; 2026 MIN 3 Kota Madiun<br>
+          <span class="portal__footer-kemenag">Kementerian Agama Republik Indonesia</span>
+        </p>
+      </footer>
+
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
